@@ -1,0 +1,172 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family:sans-serif;
+}
+a{ 
+    color: inherit;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(235, 204, 121);
+}
+.medsos{
+    padding: 5px 0;
+    background-color: rgb(255, 187, 0);
+}
+.medsos ul li {
+    display: inline-block;
+    color:black;
+    margin-right: 10px;
+}
+.active{
+    background-color: rgb(255, 187, 0);
+    color: black;
+}
+section{
+    padding: 50px 0;
+}
+section h1{
+    text-align: center;
+    padding: 5px 0;
+    color: rgb(0, 119, 255);
+    margin-bottom: 50px;    
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+header{
+    height: 60px;
+    background: rgb(239, 216, 250);
+    box-shadow: 0 10px 15px rgba(0,0,0, 1);
+    height: 70px;
+}
+header h1{
+    float: left;
+    padding: 10px 0;
+    color: purple;
+}
+header ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+}
+header ul li{
+    background: rgb(250, 239, 216);
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+header ul li a {
+    display: block;
+    padding: 0px 15px;
+    color: black;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 12px;
+    transition: 0.5s;
+}
+header ul li a:hover{
+    background-color:rgb(255, 187, 0);
+    color: red;
+}
+header ul ul{
+    position: absolute;
+    top: 60px;
+    line-height: 20px;
+    display: none;
+}
+header ul li:hover> ul {
+    display:block;
+}
+header ul ul li{
+    width: 300px;
+    float: none;
+    display: list-item;
+    position: relative;
+    line-height: 10px;
+}
+.banner{
+    height: 60vh;
+    background-image: url('../kucing/banner01.jpeg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.banner h2{
+    color: rgb(7, 7, 7);
+    z-index: 1;
+    padding: 10px 25px ;
+    border: 2px solid #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foto{
+    height: 20px;
+
+}
+.service{
+    background-color: antiquewhite;
+}
+.gambar img{
+    width: 300px;
+    height: 200px;
+    border: 4px solid antiquewhite;
+    padding: 10px;
+    margin: 7px;
+    float: left;
+    text-align: center;
+}
+footer{
+    padding: 30px 0;
+    background-color: pink;
+    color: blue;
+    text-align: center;
+}
+.bg-loader {
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-loader .loader{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #dd6ede;
+    border-radius: 50%;
+    border-top-color: red;
+    border-right-color: yellow;
+    border-bottom-color: blue;
+    animation: putarin .9s linear infinite;
+}
+.blink{
+    animation: blink-animation 1s step-end infinite;
+}
+@keyframes blink-animation{
+    50%{
+        opacity: 0;
+    }
+}
+@keyframes putarin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width:991.98px) {
+
+
